@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat GPT 4</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Chat GPT 4</h1>
+  </header>
+
+  <main>
+    <div class="chat">
+      <div class="gptchat">
+        <img
+          src="https://images.unsplash.com/photo-1679083216051-aa510a1a2c0e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2hhdGdwdHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=900&q=60"
+          alt="gptavatar" class="avatar" />
+
+        <p>Please ask me whatever you want!</p>
+      </div>
+    </div>
+
+    <form onsubmit="onSendMessage(event)">
+      <input type="text" onsubmit="onSendMessage()" id="message" placeholder="Type your message here" />
+      <button onclick="onSendMessage()">Send</button>
+    </form>
+
+  </main>
+
+
+</body>
+
+</html>
